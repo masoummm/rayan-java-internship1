@@ -1,7 +1,5 @@
 package com.rh.intership.Employee;
-import com.rh.Internship.ServicesEmployee.Employee;
 import com.rh.Internship.services.Factory;
-import com.rh.Internship.services.MessageService;
 import org.junit.Test;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertThat;

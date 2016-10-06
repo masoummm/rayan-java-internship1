@@ -10,7 +10,10 @@ import java.util.Optional;
  */
 public interface UserDao {
     Optional<User> insertUser(User user);
+
     Optional<User> updateUser(User user);
+
     boolean deleteUser(long userId);
-    List<User> selectAllUser();
+
+    List<User> selectAllUser() throws Exception;
 }

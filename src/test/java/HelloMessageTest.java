@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 /**
  * @author Saeed Zarinfam
  */
-public class HelloMessageTest {
+public class  HelloMessageTest {
 
     @Test
     public void getMessageServiceDesktopFromFactory_getMessageForDesktopVersion_returnSpanishMessage(){

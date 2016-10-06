@@ -10,5 +10,6 @@ import java.util.Optional;
  */
 public interface UserService {
     Optional<User> createUser(User user);
-    List<User> getAllUser();
+
+    List<User> getAllUser() throws Exception;
 }

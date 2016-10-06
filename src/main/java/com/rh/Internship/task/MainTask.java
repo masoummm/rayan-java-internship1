@@ -1,10 +1,9 @@
 package com.rh.Internship.task;
 
-import java.sql.*;
+import com.rh.Internship.task.models.User;
+import com.rh.Internship.task.services.UserServiceImpl;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * @author Saeed Zarinfam
@@ -17,8 +16,14 @@ public class MainTask {
     static final String USER = "test";
     static final String PASS = "p";
 
-    public static void main(String[] args) {
-        try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS)) {
+    public static void main(String[] args) throws Exception {
+        UserServiceImpl personManager = new UserServiceImpl();
+        ArrayList<User> list = (ArrayList<User>) personManager.getAllUser();
+        for (User user : list) {
+            System.out.println(user.getId() + "  " + user.getName());
+
+
+      /*  try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS)) {
             try (Statement stmt = conn.createStatement()) {
                 String sql = "SELECT * FROM task";
                 ResultSet rs = stmt.executeQuery(sql);
@@ -38,6 +43,7 @@ public class MainTask {
         } catch (Exception e) {
             //Handle errors for Class.forName
             e.printStackTrace();
+        }*/
         }
     }
 }

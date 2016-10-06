@@ -21,7 +21,7 @@
             <version>5.1.39</version>
         </dependency>
         <dependency>
-            <groupId>racle.com</groupId>
+            <groupId>oracle.com</groupId>
             <artifactId>jdbc7</artifactId>
             <version>12.1.0.1.0</version>
         </dependency>

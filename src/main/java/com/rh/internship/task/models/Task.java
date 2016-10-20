@@ -6,7 +6,7 @@ import javax.persistence.*;
  * @author Saeed Zarinfam
  */
 @Entity
-@Table(name = "task")
+@Table(name = "tasks")
 public class Task {
     @Id
     @GeneratedValue
@@ -32,6 +32,8 @@ public class Task {
         this.description = description;
         this.user = user;
     }
+
+
 
     public long getId() {
         return id;

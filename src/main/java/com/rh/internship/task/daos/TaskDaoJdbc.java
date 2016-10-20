@@ -32,4 +32,14 @@ public class TaskDaoJdbc extends GeneralDaoJdbc implements TaskDao {
             return taskList;
         }, sql).orElseGet(ArrayList::new);
     }
+
+    @Override
+    public List<Task> getTaskByPartName(String titlePart) {
+        return null;
+    }
+
+    @Override
+    public void addTaskForUser(List<Task> task, User user) {
+
+    }
 }

@@ -7,11 +7,11 @@ import java.util.List;
  * @author Saeed Zarinfam
  */
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
 
     @Id
-    @GeneratedValue
+    //@GeneratedValue
     private long id;
 
     private String name;
